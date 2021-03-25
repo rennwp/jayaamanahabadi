@@ -1,0 +1,101 @@
+/* Navbar */
+.nav-link {
+  margin-left: 20px;
+}
+
+.navbar img {
+  width: 50px;
+}
+
+.borderbottom {
+  border-bottom: solid 5px red;
+}
+
+.navbar .btn {
+  margin-left: 20px;
+  border-radius: 60px;
+}
+
+/* Jumbotron */
+.jumbotron {
+  padding: 2em;
+  background-image: url(img/DSC_1531.JPG);
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px;
+  color: white;
+  text-shadow: 2px, 2px, 2px, rgba(0, 0, 0, 0.5);
+  border-bottom: solid 5px red;
+}
+
+.texthero {
+  margin-top: 150px;
+  text-shadow: 2px 2px 8px rgb(0, 0, 0, 0.7);
+}
+
+.jumbotron p {
+  font-weight: 350;
+}
+
+.jumbotron span {
+  font-weight: 500;
+}
+
+/* Our work */
+
+.ourwork1 {
+  padding: 25px;
+}
+
+.slideborder {
+  border-top: solid 5px red;
+}
+
+/* footer */
+.footer {
+  background-color: rgb(43, 43, 43);
+  color: rgb(197, 197, 197);
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  font-size: 12px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 900px) {
+  .navbar img {
+    width: 60px;
+  }
+
+  .ourwork1 {
+    padding: 120px;
+  }
+
+  .footer {
+    background-color: rgb(43, 43, 43);
+    color: rgb(197, 197, 197);
+    width: 100%;
+    height: 200px;
+    line-height: 200px;
+    font-size: 20px;
+  }
+
+  .nav-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: red;
+    transition: width 0.3s;
+  }
+
+  .nav-link:hover::after {
+    width: 100%;
+    transition: width 0.3s;
+  }
+}
